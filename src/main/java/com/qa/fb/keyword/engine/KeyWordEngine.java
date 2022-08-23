@@ -83,9 +83,11 @@ public class KeyWordEngine extends Base {
 					if (action.equalsIgnoreCase("sendkeys")) {
 						element.clear();
 						element.sendKeys(value);
-					} else if (action.equalsIgnoreCase("click")) {
-						//element.click();
+					} else if (action.equalsIgnoreCase("select and click")) {
+						element.click();
 						element.sendKeys(value);
+					} else if (action.equalsIgnoreCase("click")) {
+						element.click();
 					} else if (action.equalsIgnoreCase("isDisplayed")) {
 						element.isDisplayed();
 					} else if (action.equalsIgnoreCase("getText")) {
