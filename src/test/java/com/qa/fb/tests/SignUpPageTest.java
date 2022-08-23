@@ -18,7 +18,7 @@ public class SignUpPageTest extends Base{
 	}
 	
 	@Test
-	public void signUpTest() throws InvalidFormatException {
+	public void signUpTest() throws InvalidFormatException   {
 		keyWordEngine = new KeyWordEngine();
 		keyWordEngine.startExecution("signup");
 	}

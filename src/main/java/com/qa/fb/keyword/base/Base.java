@@ -39,8 +39,7 @@ public class Base {
 	public Properties init_properties() {
 		properties = new Properties();
 		try {
-			FileInputStream inputStream = new FileInputStream("C:\\Users\\Md Aamir Reza\\eclipse-workspace\\KeyWordDrivenFB\\src\\main\\java\\com\\qa\\fb"
-		+"\\keyword\\config\\config.properties");
+			FileInputStream inputStream = new FileInputStream("C:\\Users\\Md Aamir Reza\\eclipse-workspace\\KeyWordDrivenFW\\src\\main\\java\\com\\qa\\fb\\keyword\\config\\config.properties");
 			properties.load(inputStream);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

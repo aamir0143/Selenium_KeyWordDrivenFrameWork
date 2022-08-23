@@ -29,8 +29,7 @@ public class KeyWordEngine extends Base {
 	public Base base;
 	public WebElement element;
 
-	public final String SCENARIO_SHEET_PATH ="C:\\Users\\Md Aamir Reza\\eclipse-workspace\\KeyWordDrivenFB\\src\\main\\java\\com\\qa\\fb"
-	+"\\keyword\\scenarios\\fbkeyworddriven.pmdx";
+	public final String SCENARIO_SHEET_PATH ="C:\\Users\\Md Aamir Reza\\eclipse-workspace\\KeyWordDrivenFW\\src\\main\\java\\com\\qa\\fb\\keyword\\scenarios\\fbkeyworddriven.pmdx";
 
 	public void startExecution(String sheetName) throws InvalidFormatException {
 
@@ -85,7 +84,8 @@ public class KeyWordEngine extends Base {
 						element.clear();
 						element.sendKeys(value);
 					} else if (action.equalsIgnoreCase("click")) {
-						element.click();
+						//element.click();
+						element.sendKeys(value);
 					} else if (action.equalsIgnoreCase("isDisplayed")) {
 						element.isDisplayed();
 					} else if (action.equalsIgnoreCase("getText")) {
